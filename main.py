@@ -14,3 +14,7 @@
 
 # (10 points): As a player, I want the option of a single player (human vs AI) or a multiplayer (human vs human) game.
 
+# from RPSLS.game import display_welcome
+from game import display_welcome
+
+display_welcome()

@@ -11,29 +11,36 @@
 
 # List = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
 
-def display_welcome(self):
+import time
+
+def display_welcome():
         print("Welcome to Rock Paper Scissors Lizard Spock")
-        sleep(.5)
+        print("")
+        time.sleep(.5)
         print("Best of 3 will be the winner")
         print("Use the number keys to choose your attack")
-        sleep(.5)
+        print("")
+        print("")
+        time.sleep(.5)
         print("Rock crushes Scissors")
-        sleep(.5)
+        time.sleep(.5)
         print("Scissors cuts Paper")
-        sleep(.5)
+        time.sleep(.5)
         print("Paper covers Rock")
-        sleep(.5)
+        time.sleep(.5)
         print("Rock crushes Lizard")
-        sleep(.5)
+        time.sleep(.5)
         print("Lizard poisons Spock")
-        sleep(.5)
+        time.sleep(.5)
         print("Spock smashes Scissors")
-        sleep(.5)
+        time.sleep(.5)
         print("Scissors decapitates Lizard")
-        sleep(.5)
+        time.sleep(.5)
         print("Lizard eats Paper")
-        sleep(.5)
+        time.sleep(.5)
         print("Paper disproves Spock")
-        sleep(.5)
+        time.sleep(.5)
         print("Spock vaporizes Rock")
+        print("")
+        print("")
 
