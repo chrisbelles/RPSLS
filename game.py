@@ -47,51 +47,66 @@ def display_welcome():
         print("")
         print("")
 
+def player_count():
+        players = (input("How many players? 1, 2, or 3?" ))
+        if players == "1":
+                player_one = self.human.name()
+                player_two = self.ai.name()
+        elif players == "2":
+                player_one = self.human.name()
+                player_two = self.human.name()
+        elif players == "3":
+                player_one = self.human.name()
+                player_two = self.human.name()  
+                player_three = self.ai.name()
+        return players  
+        
 
-if human_gesture == ai_gesture:
-    print(f"Both players selected {human_gesture}. It's a tie!")
-elif human_gesture == "Rock":
-    if ai_gesture == "Scissors":
-        print("Rock crushes Scissors! You win!")
-    elif ai_gesture == "Lizard":
-        print("Rock crushes Lizard! You win!")
-    elif ai_gesture == "Paper":
-        print("Paper covers Rock! You lose!")
-    elif ai_gesture == "Spock":
-        print("Spock vaporizes Rock! You lose!")
-elif human_gesture == "Paper":
-    if ai_gesture == "Scissors":
-        print("Scissors cuts Paper! You win!")
-    elif ai_gesture == "Spock":
-        print("Paper disproves Spock! You win!")
-    elif ai_gesture == "Scissors":
-        print("Scissors cuts Paper! You lose!")
-    elif ai_gesture == "Lizard":
-        print("Lizard eats Paper! You lose!")
-elif human_gesture == "Scissors":
-    if ai_gesture == "Paper":
-        print("Scissors cuts Paper! You win!")
-    elif ai_gesture == "Lizard":
-        print("Scissors decapitates Lizard. You win!")
-    elif ai_gesture == "Rock":
-        print("Rock crushes Scissors! You lose!")
-    elif ai_gesture == "Spock":
-        print("Spock smashes Scissors! You lose!")
-elif human_gesture == "Lizard":
-    if ai_gesture == "Paper":
-        print("Lizard eats Paper! You win!")
-    elif ai_gesture == "Spock":
-        print("Lizard poisons Spock. You win!")
-    elif ai_gesture == "Rock":
-        print("Rock crushes Lizard! You lose!")
-    elif ai_gesture == "Scissors":
-        print("Scissors decapitates Lizard! You lose!")
-elif human_gesture == "Spock":
-    if ai_gesture == "Scissors":
-        print("Spock smashes Scissors! You win!")
-    elif ai_gesture == "Rock":
-        print("Spock vaporizes Rock. You win!")
-    elif ai_gesture == "Lizard":
-        print("Lizard poisons Spock! You lose!")
-    elif ai_gesture == "Paper":
-        print("Paper disproves Spock! You lose!")
+
+# if human_gesture == ai_gesture:
+#     print(f"Both players selected {human_gesture}. It's a tie!")
+# elif human_gesture == "Rock":
+#     if ai_gesture == "Scissors":
+#         print("Rock crushes Scissors! You win!")
+#     elif ai_gesture == "Lizard":
+#         print("Rock crushes Lizard! You win!")
+#     elif ai_gesture == "Paper":
+#         print("Paper covers Rock! You lose!")
+#     elif ai_gesture == "Spock":
+#         print("Spock vaporizes Rock! You lose!")
+# elif human_gesture == "Paper":
+#     if ai_gesture == "Scissors":
+#         print("Scissors cuts Paper! You win!")
+#     elif ai_gesture == "Spock":
+#         print("Paper disproves Spock! You win!")
+#     elif ai_gesture == "Scissors":
+#         print("Scissors cuts Paper! You lose!")
+#     elif ai_gesture == "Lizard":
+#         print("Lizard eats Paper! You lose!")
+# elif human_gesture == "Scissors":
+#     if ai_gesture == "Paper":
+#         print("Scissors cuts Paper! You win!")
+#     elif ai_gesture == "Lizard":
+#         print("Scissors decapitates Lizard. You win!")
+#     elif ai_gesture == "Rock":
+#         print("Rock crushes Scissors! You lose!")
+#     elif ai_gesture == "Spock":
+#         print("Spock smashes Scissors! You lose!")
+# elif human_gesture == "Lizard":
+#     if ai_gesture == "Paper":
+#         print("Lizard eats Paper! You win!")
+#     elif ai_gesture == "Spock":
+#         print("Lizard poisons Spock. You win!")
+#     elif ai_gesture == "Rock":
+#         print("Rock crushes Lizard! You lose!")
+#     elif ai_gesture == "Scissors":
+#         print("Scissors decapitates Lizard! You lose!")
+# elif human_gesture == "Spock":
+#     if ai_gesture == "Scissors":
+#         print("Spock smashes Scissors! You win!")
+#     elif ai_gesture == "Rock":
+#         print("Spock vaporizes Rock. You win!")
+#     elif ai_gesture == "Lizard":
+#         print("Lizard poisons Spock! You lose!")
+#     elif ai_gesture == "Paper":
+#         print("Paper disproves Spock! You lose!")

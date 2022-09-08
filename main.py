@@ -16,5 +16,7 @@
 
 # from RPSLS.game import display_welcome
 from game import display_welcome
+from game import player_count
 
 display_welcome()
+player_count()
