@@ -56,9 +56,8 @@ def player_count():
                 player_one = self.human.name()
                 player_two = self.human.name()
         elif players == "3":
-                player_one = self.human.name()
-                player_two = self.human.name()  
-                player_three = self.ai.name()
+                player_one = self.ai.name()
+                player_two = self.ai.name()  
         return players  
         
 
