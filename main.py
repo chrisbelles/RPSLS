@@ -14,10 +14,9 @@
 
 # (10 points): As a player, I want the option of a single player (human vs AI) or a multiplayer (human vs human) game.
 
-from game import declare_winner, display_welcome, player_count, play_game
+from game import declare_winner, display_welcome, play_game
 
 
 display_welcome()
-player_count()
 play_game()
 declare_winner()

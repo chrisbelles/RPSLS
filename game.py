@@ -36,7 +36,7 @@ def display_welcome():
     print("")
     print("")
 
-def player_count():
+def play_game():
     players = (input("How many players? 1, 2, or 3? "))
     if players == "1":
         player_one = Human("Player One")
@@ -51,7 +51,7 @@ def player_count():
         print(Error)
         
 
-def play_game():
+
     while player_one.score < 2 and player_two.score > 2:
         if player_one.chosen_gesture == player_two.chosen_gesture:
             print(f"Both players selected {player_one.chosen_gesture}. It's a tie!")
