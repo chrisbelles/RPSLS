@@ -35,6 +35,7 @@ def display_welcome():
     print("Spock vaporizes Rock")
     print("")
     print("")
+    
 
 def play_game():
     players = (input("How many players? 1, 2, or 3? "))
