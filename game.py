@@ -1,3 +1,4 @@
+from distutils.log import error
 from msilib.schema import Error
 import time
 from human import Human
@@ -59,8 +60,12 @@ class Game():
 
 
         while self.player_one.score < 2 and self.player_two.score < 2:
-            if self.player_one == Human:
-                selected_gesture()
+            # if players == "1" or "2":
+                # Human.chosen_gesture(self)
+            if players == "2" or "3":
+                Ai.chosen_gesture(self)
+            else:
+                print(Error)
             if self.player_one.chosen_gesture == self.player_two.chosen_gesture:
                 print(f"Both players selected {self.player_one.chosen_gesture}. It's a tie!")
             elif self.player_one.chosen_gesture == "Rock":
