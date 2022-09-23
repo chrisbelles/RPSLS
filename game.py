@@ -3,6 +3,7 @@ from msilib.schema import Error
 import time
 from human import Human
 from ai import Ai
+from ai2 import Ai2
 from player import Player
 
 
@@ -46,14 +47,14 @@ class Game():
     def play_game(self):
         players = (input("How many players? 1, 2, or 3? "))
         if players == "1":
-            self.player_one = Human("Player One")
-            self.player_two = Ai("Player Two")
+            self.player_one = Human("Player One", 0)            
+            self.player_two = Ai("Player Two", 0)           
         elif players == "2":
-            self.player_one = Human("Player One")
-            self.player_two = Human("Player Two")
+            self.player_one = Human("Player One", 0)            
+            self.player_two = Human("Player Two", 0)            
         elif players == "3":
-            self.player_one = Ai("Player One")
-            self.player_two = Ai("Player Two")
+            self.player_one = Ai("Player One", 0)            
+            self.player_two = Ai2("Player Two", 0)            
         else:
             print(Error)
             
@@ -62,8 +63,11 @@ class Game():
         while self.player_one.score < 2 and self.player_two.score < 2:
             # if players == "1" or "2":
                 # Human.chosen_gesture(self)
-            if players == "2" or "3":
+            if players == "3":
                 Ai.chosen_gesture(self)
+                self.player_one.chosen_gesture = Ai.chosen_gesture
+                Ai2.chosen_gesture(self)
+                self.player_two.chosen_gesture = Ai2.chosen_gesture
             else:
                 print(Error)
             if self.player_one.chosen_gesture == self.player_two.chosen_gesture:

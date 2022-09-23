@@ -3,7 +3,7 @@ import time
 
 
 class Human(Player):
-    def __init__(self, name):
+    def __init__(self, name, score):
         super().__init__()
         self.name = name
         self.score = 0

@@ -1,7 +1,7 @@
 from player import Player
 import random
 
-class Ai(Player):
+class Ai2(Player):
     def __init__(self, name, score):
         super().__init__()
         self.name = name
@@ -13,4 +13,4 @@ class Ai(Player):
         # self.chosen_gesture = self.selected_gesture
         print(f"AI has chosen {gesture_list[int(self.chosen_gesture)]}")
         # print(f"{self.name} has chosen {gesture_list[int(self.chosen_gesture)]}")
-        # return self.chosen_gesture
+        return self.chosen_gesture
