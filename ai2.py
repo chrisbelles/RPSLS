@@ -13,4 +13,4 @@ class Ai2(Player):
         # self.chosen_gesture = self.selected_gesture
         print(f"AI2 has chosen {gesture_list[int(self.chosen_gesture)]}")
         # print(f"{self.name} has chosen {gesture_list[int(self.chosen_gesture)]}")
-        return self.chosen_gesture
+        return str(self.chosen_gesture)

@@ -23,3 +23,4 @@ class Human2(Player):
         gesture_list = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
         # self.selected_gesture = self.chosen_gesture
         print(f"Player 2 has chosen {gesture_list[int(self.chosen_gesture)]}")
+        return str(self.chosen_gesture)
