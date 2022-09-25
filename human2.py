@@ -2,7 +2,7 @@ from player import Player
 import time
 
 
-class Human(Player):
+class Human2(Player):
     def __init__(self, name, score):
         super().__init__()
         self.name = name
@@ -22,5 +22,4 @@ class Human(Player):
         self.chosen_gesture = input("Please enter make your selection! ")
         gesture_list = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
         # self.selected_gesture = self.chosen_gesture
-        print(f"Player 1 has chosen {gesture_list[int(self.chosen_gesture)]}")
-        return self.chosen_gesture
+        print(f"Player 2 has chosen {gesture_list[int(self.chosen_gesture)]}")
