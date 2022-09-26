@@ -143,7 +143,10 @@ class Game():
     def rematch(self):
         play_again = input("Would you like to play again? y/n ")
         if play_again == "y":
-            self.play_game()
+          self.display_welcome()
+          self.play_game()
+          self.declare_winner()
+          self.rematch()
         else:
             print("Thanks for playing!")
         
