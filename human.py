@@ -20,8 +20,8 @@ class Human(Player):
         time.sleep(.25)
         print("Choose 4 for Spock.")
         time.sleep(.25)
-        self.chosen_gesture = input("Please enter make your selection! ")
+        self.selected_gesture = input("Please enter make your selection! ")
         gesture_list = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
-        self.selected_gesture = self.chosen_gesture
-        print(f"Player 1 has chosen {gesture_list[int(self.chosen_gesture)]}")
+        # self.selected_gesture = self.chosen_gesture
+        print(f"Player 1 has chosen {gesture_list[int(self.selected_gesture)]}")
         # return str(self.chosen_gesture)
