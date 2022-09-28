@@ -5,9 +5,6 @@ import time
 class Human(Player):
     def __init__(self, name, score):
         super().__init__()
-        self.name = name
-        self.score = 0
-        self.selected_gesture = ""
 
     def chosen_gesture(self):
         print("Choose 0 for Rock.")
@@ -22,6 +19,11 @@ class Human(Player):
         time.sleep(.25)
         self.selected_gesture = input("Please enter make your selection! ")
         gesture_list = ["Rock", "Paper", "Scissors", "Lizard", "Spock"]
-        # self.selected_gesture = self.chosen_gesture
-        print(f"Player 1 has chosen {gesture_list[int(self.selected_gesture)]}")
-        # return str(self.chosen_gesture)
+
+        input_validation = True
+        while input_validation:
+            if self.selected_gesture == "0" or self.selected_gesture == "1" or self.selected_gesture == "2" or self.selected_gesture == "3" or self.selected_gesture == "4":
+                print(f"Player 1 has chosen {gesture_list[int(self.selected_gesture)]}")
+                input_validation = False
+            else:
+                self.selected_gesture = input("Please try again. Select 0, 1, 2, 3, or 4. ")

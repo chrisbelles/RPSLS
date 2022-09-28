@@ -4,9 +4,9 @@ import random
 class Ai2(Player):
     def __init__(self, name, score):
         super().__init__()
-        self.name = name
-        self.score = 0
-        self.selected_gesture = ""
+        # self.name = name
+        # self.score = 0
+        # self.selected_gesture = ""
 
     def chosen_gesture(self):
         self.selected_gesture = random.randint(0,4)
