@@ -3,8 +3,8 @@ import random
 import time
 
 class Ai(Player):
-    def __init__(self, name, score):
-        super().__init__()
+    def __init__(self, name):
+        super().__init__(name)
 
     def chosen_gesture(self):
         self.selected_gesture = random.randint(0,4)
@@ -12,4 +12,4 @@ class Ai(Player):
         time.sleep(.25)
         self.selected_gesture = str(self.selected_gesture)
         time.sleep(.25)
-        print(f"AI has chosen {gesture_list[int(self.selected_gesture)]}")
+        print(f"{self.name} has chosen {gesture_list[int(self.selected_gesture)]}")

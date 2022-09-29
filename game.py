@@ -1,10 +1,6 @@
-from distutils.log import error
-from msilib.schema import Error
 import time
 from human import Human
 from ai import Ai
-# from ai2 import Ai2
-# from human2 import Human2
 
 
 class Game():
@@ -49,16 +45,16 @@ class Game():
         while input_validation:          
           players = input("How many players? 1 (Human vs. AI), 2 (Human vs. Human), or 3 (Ai vs. Ai)? ")    
           if players == "1":
-              self.player_one = Human("Player One", 0)            
-              self.player_two = Ai("Player Two",0)
+              self.player_one.name = Human("Player One")            
+              self.player_two.name = Ai("Player Two")
               input_validation = False           
           elif players == "2":
-              self.player_one = Human("Player One",0)            
-              self.player_two = Human("Player Two",0)
+              self.player_one.name = Human("Player One")            
+              self.player_two.name = Human("Player Two")
               input_validation = False            
           elif players == "3":
-              self.player_one = Ai("Player One", 0)            
-              self.player_two = Ai("Player Two", 0)
+              self.player_one = Ai("Player One")            
+              self.player_two = Ai("Player Two")
               input_validation = False 
           else:
               print("Invalid Entry. Please try again.")

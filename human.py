@@ -3,8 +3,8 @@ import time
 
 
 class Human(Player):
-    def __init__(self, name, score):
-        super().__init__()
+    def __init__(self, name):
+        super().__init__(name)
 
     def chosen_gesture(self):
         print("Choose 0 for Rock.")
@@ -23,7 +23,7 @@ class Human(Player):
         input_validation = True
         while input_validation:
             if self.selected_gesture == "0" or self.selected_gesture == "1" or self.selected_gesture == "2" or self.selected_gesture == "3" or self.selected_gesture == "4":
-                print(f"Player 1 has chosen {gesture_list[int(self.selected_gesture)]}")
+                print(f"{self.name} has chosen {gesture_list[int(self.selected_gesture)]}")
                 input_validation = False
             else:
                 self.selected_gesture = input("Please try again. Select 0, 1, 2, 3, or 4. ")
